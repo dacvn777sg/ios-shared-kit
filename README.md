@@ -16,3 +16,17 @@ Tag releases match the XCFramework version: `0.1.0`, `0.1.1`, etc. Each tag is a
 4. iOS repo: bump SPM dependency to the new tag.
 
 See ticket MA-2267 for Phase 0 setup; future CI automation tracked separately.
+
+## Releases
+
+### 0.1.1 (MA-2269)
+- Strict JSON in HttpClient (removed isLenient)
+- Expanded Outcome<V, E> API surface (40 tests; matches :app shape)
+- KSP wired -> @NativeCoroutines now generates Swift bindings for suspend/Flow
+- Gradle iosSimulatorArm64Test now actually runs tests on Apple Silicon
+
+### 0.1.0 (MA-2267)
+- Initial XCFramework - Phase 0 KMP foundation
+- Ping smoke API (sync + suspend)
+- Outcome<V, E> basic shape
+
