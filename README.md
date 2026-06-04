@@ -19,6 +19,15 @@ See ticket MA-2267 for Phase 0 setup; future CI automation tracked separately.
 
 ## Releases
 
+### 0.2.0 (MA-2270)
+- Phase 1 pilot: Activity pattern validation
+- New: `InsActivity` domain model
+- New: `LocalCache<T>` generic repository contract
+- New: `ObserveActivityCacheUseCase` exposed via @NativeCoroutines -> Swift Combine `AnyPublisher`
+- New: `KoinInitializer.shared.start(activityCache:)` - iOS bootstrap entry point
+- New: `KoinBridge.shared.resolveObserveActivityCacheUseCase()` - typed resolver for Swift
+- Backward compatible with 0.1.x - additive only (existing Ping API unchanged)
+
 ### 0.1.1 (MA-2269)
 - Strict JSON in HttpClient (removed isLenient)
 - Expanded Outcome<V, E> API surface (40 tests; matches :app shape)
