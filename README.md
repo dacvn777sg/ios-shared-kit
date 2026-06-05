@@ -19,6 +19,16 @@ See ticket MA-2267 for Phase 0 setup; future CI automation tracked separately.
 
 ## Releases
 
+### 0.3.0 (MA-2271)
+- Phase 1.5: reactive cache + remote refresh
+- New: `InMemoryInsActivityCache` — `MutableStateFlow`-backed `LocalCache<InsActivity>` (reactive: `observe()` re-emits on `replaceAll`)
+- New: `ActivityRemoteSource` interface
+- New: `InMemoryStubActivityRemoteSource` — returns 3 hardcoded activities for pilot smoke
+- New: `ActivityDto` + `toDomain()` mapper
+- New: `GetCarerActivityUseCase` — `@NativeCoroutines suspend invoke(carerId, filter)` returning `Outcome<Unit, String>` (writes remote → cache)
+- New: `KoinBridge.shared.resolveGetCarerActivityUseCase()`
+- Backward compatible with 0.2.x — all 0.2.x API preserved
+
 ### 0.2.0 (MA-2270)
 - Phase 1 pilot: Activity pattern validation
 - New: `InsActivity` domain model
