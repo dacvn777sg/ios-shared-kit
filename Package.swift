@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SharedKit",
-            url: "https://github.com/dacvn777sg/ios-shared-kit/releases/download/0.11.0/SharedKit-0.11.0.xcframework.zip",
-            checksum: "eed339e2581f62edd0612a814a2ceb7980237832e738cadf86a356e56c88c249"
+            url: "https://github.com/dacvn777sg/ios-shared-kit/releases/download/0.12.0/SharedKit-0.12.0.xcframework.zip",
+            checksum: "e7613196794fa8b6c85328478aed86ba4877a1982c2eac7ca37fb899d1c2c70c"
         )
     ]
 )
