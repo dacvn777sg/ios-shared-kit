@@ -49,3 +49,5 @@ See ticket MA-2267 for Phase 0 setup; future CI automation tracked separately.
 - Ping smoke API (sync + suspend)
 - Outcome<V, E> basic shape
 
+
+> **DEPRECATED (2026-06-12):** SharedKit is now built from source inside the KMP monorepo (`lifeguardian-connect-android`, `/iosApp` + `/shared`) via `embedAndSignAppleFrameworkForXcode`. This repo is no longer published to. Kept for release history only.
